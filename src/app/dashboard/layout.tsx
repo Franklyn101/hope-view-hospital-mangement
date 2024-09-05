@@ -1,4 +1,5 @@
 import React from 'react';
+import SideNav from '@/components/ui/dashBoardLayoutComponemt/sideNav';
 
 export default function DashboardLayout({
   children,
@@ -11,10 +12,12 @@ export default function DashboardLayout({
         {/* Add your dashboard header content here */}
         <h1>Dashboard</h1>
       </header>
-      <nav>
-        {/* Add your dashboard navigation here */}
-      </nav>
+      <div className='flex'>
+      <SideNav/>
       <main>{children}</main>
+
+      </div>
+      
       <footer>
         {/* Add your dashboard footer content here */}
       </footer>
