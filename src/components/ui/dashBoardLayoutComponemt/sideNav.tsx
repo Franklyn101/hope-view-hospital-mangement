@@ -5,11 +5,27 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const navItems = [
-  { name: 'Dashboard', path: '/dashboard' },
-  { name: 'Patients', path: '/patients' },
-  { name: 'Appointments', path: '/appointments' },
-  { name: 'Staff', path: '/staff' },
-  { name: 'Reports', path: '/reports' },
+  {
+     name: 'Dashboard',
+     path: '/dashboard' 
+    },
+
+  {
+     name: 'Patients',
+     path: '/dashboard/patients' 
+    },
+  {
+     name: 'Appointments',
+     path: '/dashboard/appointments' 
+    },
+  {
+     name: 'Staff',
+     path: '/dashboard/staff'
+     },
+  {
+     name: 'Reports',
+     path: '/dashboard/reports' 
+    },
 ];
 
 const SideNav: React.FC = () => {
